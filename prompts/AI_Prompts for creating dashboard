@@ -1,0 +1,59 @@
+AI Prompts for Excel Sales Analysis
+
+Prepared by: Sarthak Gupta
+
+Dataset Context
+
+The Excel worksheet is named SalesData and contains these columns:
+
+transaction_id, date, day_name, month_name, year, product_category, product_name, units_sold, price_per_unit, total_sales, customer_name, customer_age, city, payment_method, customer_ratings.
+
+Prompt 1: Total Sales for Each City
+I have sales data in an Excel worksheet named SalesData. The city field is in column M and total_sales is in column J. Calculate total sales for each city. Suggest a suitable Excel formula, explain how it works, and show how to present the result in a summary table.
+
+Expected approach: Use SUMIF, a PivotTable, or another suitable method to sum sales by city.
+
+Prompt 2: Top 5 Cities by Total Sales
+Using the SalesData worksheet, identify the top 5 cities with the highest total sales. First summarize total_sales for each city, then sort the results from highest to lowest. Provide an Excel formula or PivotTable method and explain how to handle ties.
+
+Expected approach: Summarize sales by city, sort in descending order, and return the top five.
+
+Prompt 3: Month-wise Total Sales
+Analyze month-wise total sales in the SalesData worksheet. Use the month_name, year, date, and total_sales fields as appropriate. Give an Excel method to calculate monthly totals and recommend a chart for showing the sales trend. Explain how to keep the months in calendar order rather than alphabetical order.
+
+Expected approach: Aggregate sales by month and year when comparing multiple years.
+
+Prompt 4: Best-Selling Product Category
+Find the product category with the highest total sales in the SalesData worksheet. Use product_category and total_sales. Provide an Excel formula or PivotTable steps to calculate category-wise totals, rank the categories, and identify the highest one.
+
+Expected approach: Sum sales by category and compare the totals.
+
+Prompt 5: Most Frequently Used Payment Method
+Determine which payment method is used most frequently in the SalesData worksheet. Count transactions for each payment_method, rather than summing sales value. Provide an Excel formula or PivotTable method and explain how to identify the most common method, including how to report a tie.
+
+Expected approach: Count transaction records by payment method using COUNTIF or a PivotTable.
+
+Prompt 6: Top 5 Best-Selling Products
+Identify the top 5 best-selling products from the SalesData worksheet using product_name and units_sold. Group repeated product names, sum the units sold for each product, sort the totals from highest to lowest, and provide an Excel formula or PivotTable method. State clearly that the ranking is based on units sold, not revenue.
+
+Expected approach: Sum units_sold by product and rank the totals.
+
+Prompt 7: Average Customer Age for Each City
+Calculate the average customer age for each city using the city and customer_age columns in SalesData. Provide a suitable Excel formula or PivotTable method and explain how to compare the average ages across cities. Ignore blank or invalid age values where appropriate.
+
+Expected approach: Use AVERAGEIF or a PivotTable to calculate average age by city.
+
+Prompt 8: Sales Contribution by Each Year (2023 vs 2024)
+Compare total sales for 2023 and 2024 in the SalesData worksheet using year and total_sales. Provide formulas to calculate each year's sales total and percentage contribution to the combined sales. Explain how to show the comparison in a chart and how to avoid division-by-zero errors.
+
+Expected approach: Sum sales by year and divide each year's total by combined sales to calculate the contribution percentage.
+
+Prompt 9: Customer Ratings Distribution
+Analyze customer rating distribution using the customer_ratings column in SalesData. Count how many records have each rating, provide an Excel formula or PivotTable method, and recommend a suitable chart. Mention how blank or invalid ratings should be handled.
+
+Expected approach: Count each rating and visualize the frequency distribution.
+
+Prompt 10: Age Group-wise Sales Analysis
+Create age groups from customer_age in the SalesData worksheet, using these bands: under 20, 20–29, 30–39, 40–49, and 50+. Calculate total sales for each age group using total_sales. Provide a clear Excel formula or helper-column method, explain the group boundaries so that every valid age belongs to one group only, and recommend a chart.
+
+Expected approach: Create consistent age bands and sum sales for each group.
