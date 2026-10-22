@@ -95,7 +95,7 @@ Open the workbook in Excel and allow formulas to recalculate. If results appear 
 
 ## AI Prompts
 
-Ten separate example prompts for the business questions are documented in [`prompts/AI_Prompts.md`](prompts/AI_Prompts.md).
+Ten separate example prompts for the business questions are documented in prompts file.
 
 **Transparency note:** The prompt file is a documented prompt set for this project. If your actual interaction with an AI tool used different wording, edit the file so it accurately reflects your process.
 
